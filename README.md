@@ -10,7 +10,7 @@ This project demonstrates practical attacks against legacy and modern Wi-Fi secu
 
 ## MitraStar GPT-2541GNAC-GV Router
 
-![MitraStar GPT-2541GNAC-GV](/imgs/MitraStar-GPT-2541GNAC-GV.jpeg)
+<img src="/imgs/MitraStar-GPT-2541GNAC-GV.jpeg" alt="MitraStar GPT-2541GNAC-GV" width="250">
 
 ### Configuration
 
@@ -25,7 +25,7 @@ One protocol per frequency
 
 ## ESP32
 
-![ESP32](/imgs/ESP32.jpeg)
+<img src="/imgs/ESP32.jpeg" alt="ESP32" width="250">
 
 The ESP32 is used as access point with **WPA** configured
 
