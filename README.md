@@ -1,8 +1,8 @@
 This project demonstrates practical attacks against legacy and modern Wi-Fi security protocols, including:
 
-* WEP
+* [WEP](wep_attack.md)
 
-* WPA
+* [WPA](wpa_attack.md)
 
 * WPA2-PSK
 
