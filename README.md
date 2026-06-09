@@ -51,28 +51,33 @@ The following scenarios will be demonstrated:
 
 * Analysis of password strength impact
 
+[Fixing usb device issues](usb_adapter_fix)
 
-# Configuration for AC1300 USB Wi-Fi and Bluetooth adapter
-Download drivers and follow the instructions in this [repo](https://github.com/shenmintao/aic8800d80/blob/main/INSTALL_SCRIPT.md)
+# Aircrack-ng
 
-## Find your USB ID
+## Prerequisites Setup
+
+### Configuring interface to monitor mode
+Command to show the wireless interface details. By default, most interfaces operate in "Managed" mode, but the target interface needs to be in "Monitor" mode for packet capture and injection.
 ```
-lsusb
+iwconfig
 ```
-1111:1111 in my case
 
-## Prevent the device from acting as a pendrive
-```
-echo "options usb-storage quirks=1111:1111:i" | sudo tee /etc/modprobe.d/aic8800_ignore.conf
-
-sudo update-initramfs -u
-```
-Reset your PC without desconect device
-
-## Switch the device from pendrive to USB Wifi mode
+Killing Interfering Processes
 
 ```
-sudo usb_modeswitch -W -c /etc/usb_modeswitch.d/1111:1111
+sudo airmon-ng check kill
 ```
-If works correctly the command `iwconfig` show a wireless interface
 
+command show the wireless interface details, the target interface needs to be in "Monitor" mode.
+When the interface are in the Managed mode, the aircrackng can configure interface with these command:
+
+```
+sudo airmon-ng start wlan0
+```
+
+## Discovering Available Access Points:´
+Once the interface is successfully in Monitor mode, you can scan the area for available routers and clients using the airodump-ng tool
+```
+sudo airmon-ng start wlan0
+```
