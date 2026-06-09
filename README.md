@@ -51,7 +51,7 @@ The following scenarios will be demonstrated:
 
 * Analysis of password strength impact
 
-[Fixing usb device issues](usb_adapter_fix)
+[Fixing usb device issues](usb_adapter_fix.md)
 
 # Aircrack-ng
 
