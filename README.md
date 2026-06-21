@@ -4,7 +4,7 @@ This project demonstrates practical attacks against legacy and modern Wi-Fi secu
 
 * [WPA](wpa_attack.md)
 
-* WPA2-PSK
+* [WPA2-PSK](wpa2psk.md)
 
 # Devices Used in Demonstration
 
